@@ -1,0 +1,828 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>DexLand - Покупка доната, привилегий, кейсов, ключей</title>
+        <meta name="keywords" content="дексленд, дэксленд, dexland, dexlend, dexland.ru, www.dexland.ru, mc.dexland.ru, сервер dexland, сервак dexland, сервер майнкрафт dexland, купить донат dexland, Магазин dexland, декс ленд донат">
+        <meta name="description" content="Официальный магазин привилегий на сервере Майнкрафт DexLand, версия сервера 1.8 по 1.16, айпи: mc.dexland.ru">
+
+		<!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="assets\js\main.js" type="application/javascript"></script>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+
+		<link href="assets\css\style.css" rel="stylesheet">
+		<link href="assets\css\style-responsive.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand" href="index.htm">DexLand</a>
+			<button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active mx-0 mx-lg-1"><a class="nav-link" href="#"><i class="fas fa-home"></i> Главная</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link" data-toggle="modal" data-target="#rulesModal" href="#rules"><i class="fas fa-file-alt"></i> Правила</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link" href="how.html"><i class="fas fa-question"></i> Как купить донат?</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link" data-toggle="modal" data-target="#securityModal" href="#security"><i class="fas fa-shield-alt"></i> Безопасность</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link" data-toggle="modal" data-target="#permdescModal" href="#permissions"><i class="fa fa-coins"></i> Описание привилегий</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link" href="console.html"><i class="fa fa-terminal"></i> Консоль</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link" target="_blank" href="https://vk.com/dex_land"><i class="fab fa-vk"></i> Группа VK</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron mb-5 shadow" style="background-repeat: repeat;background-image: url(assets/img/bgdot.png);">
+			<div class="container">
+				<div class="row text-center">
+
+					<div class="col-3">
+						<div class="p-3 mb-00 bg-info text-white shadow-sm rounded monitoring-online">
+							<h5 class="text-uppercase text-overflow monitoring-text">Текущий онлайн</h5>
+                            <script>
+	                        var min = 2000;
+	                        var max = 4000;
+	                        document.write('<h1 class="text-uppercase" id="online-players">' + Math.floor(min + Math.random() * (max + 1 - min)) + '</h1>');
+                            </script>
+						</div>
+					</div>
+
+					<div class="col-6 text-center m-auto">
+						<h1 class="header-sitename font-weight-bold">DexLand</h1>
+						<p style="font-size: 25px;">Наш IP: <span class="text-danger rounded" id="full-select">mc.dexland.ru</span></p>
+					</div>
+
+					<!--<div class="col-4">
+						<div class="p-3 mb-2 bg-info text-white shadow-sm rounded">
+							<h5 class="text-uppercase">Рекорд сегодня</h5>
+							<h1 class="text-uppercase" id="online-today">0</h1>
+						</div>
+					</div>-->
+
+					<div class="col-3">
+						<div class="p-3 mb-0 bg-info text-white shadow-sm rounded monitoring-online">
+							<h5 class="text-uppercase text-overflow monitoring-text">Рекорд</h5>
+							<h1 class="text-uppercase" id="online-record">6388</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+				<div class="alert alert-primary w-75 m-auto text-center" role="alert">
+			<p><b>Внимание!</b> Скидки на все платные услуги до <b class="col-red">75%</b><br>Весь донат покупается <b>навсегда</b> и остается после вайпа.</p>
+			<p class="mb-0 timerrow">
+				До окончания акции осталось
+				<b class="col-red timer">0 час. 0 мин. 0 сек.</b>
+			</p>
+		</div>
+		
+		<div class="shadow w-75 p-5 rounded mt-5 mx-auto bg-white">
+			<ul class="nav nav-tabs" id="buyTab" role="tablist">
+				
+				<li class="nav-item">
+					<a class="nav-link active show" id="survival-tab" data-toggle="tab" href="#survival" role="tab" aria-controls="survival" aria-selected="true">Выживания</a>
+				</li>
+						
+				<li class="nav-item">
+					<a class="nav-link " id="anarchy-tab" data-toggle="tab" href="#anarchy" role="tab" aria-controls="anarchy" aria-selected="false">Анархия</a>
+				</li>
+									</ul>
+			<div class="tab-content" id="buyTabContent">
+			
+				
+				<div class="tab-pane fade show active" id="survival" role="tabpanel" aria-labelledby="survival-tab">
+					<form method="post" class="pt-3">
+					
+					    <input type="hidden" name="server" value="survival">
+						
+						<div class="form-group">
+							<label class="font-weight-bold small" for="nicknameLabel">Введите никнейм</label>
+							<input type="text" class="form-control" maxlength="16" id="nicknameLabel" name="playername" required="" placeholder="Введите никнейм">
+						</div>
+
+						<div class="form-group">
+							<label class="font-weight-bold small" for="permissionLabel">Выберите привилегию</label>
+							<select name="item" id="permissionLabel" class="form-control">
+						
+						
+								<optgroup label="Донат привилегии">
+								
+								<option value="owner">Цезарь (Все права + OP) - 9700 руб./Навсегда</option>
+							
+								<option value="antigrief">АнтиГрифер - 2899 руб./Навсегда</option>
+							
+								<option value="blaze">Владелец - 479 руб./Навсегда</option>
+							
+								<option value="helper">Хелпер - 329 руб./Навсегда</option>
+							
+								<option value="opka">Опка - 279 руб./Навсегда</option>
+							
+								<option value="pomosh">Помощь - 219 руб./Навсегда</option>
+							
+								<option value="deluxe">Делюкс - 179 руб./Навсегда</option>
+							
+								<option value="imperator">Император - 149 руб./Навсегда</option>
+							
+								<option value="enigma">Энигма - 99 руб./Навсегда</option>
+							
+								<option value="gladmin">Гл.Админ - 69 руб./Навсегда</option>
+							
+								<option value="admin">Админ - 59 руб./Навсегда</option>
+							
+								<option value="moder">Модер - 39 руб./Навсегда</option>
+							
+								<option value="legenda">Легенда - 25 руб./Навсегда</option>
+							
+								<option value="creative">Креатив - 15 руб./Навсегда</option>
+							
+								<option value="premium">Премиум - 10 руб./Навсегда</option>
+							
+								<option value="vip">Вип - 5 руб./Навсегда</option>
+							
+								<optgroup label="Ключи к донат кейсам">
+								
+								<option value="case5">Кейсы 5 шт - 25 руб.</option>
+							
+								<option value="case10">Кейсы 10 шт - 42 руб.</option>
+							
+								<option value="case20">Кейсы 20 шт - 89 руб.</option>
+							
+								<option value="case30">Кейсы 30 шт - 139 руб.</option>
+							
+								<option value="case50">Кейсы 50 шт - 249 руб.</option>
+							
+								<option value="case100">Кейсы 100 шт - 449 руб.</option>
+							
+						     </optgroup></optgroup></select>
+						</div>
+
+						<div class="form-group">
+							<label class="font-weight-bold small" for="promoLabel">Промо-код (Если есть)</label>
+							<input type="text" class="form-control" id="promoLabel" name="promocode" placeholder="Промо-код">
+						</div>
+						
+						<div class="text-center pt-3">
+						    <button type="submit" class="btn btn-success text-uppercase">Купить / Доплатить</button>
+						</div>
+						
+					</form>
+				</div>
+						
+				<div class="tab-pane fade show " id="anarchy" role="tabpanel" aria-labelledby="anarchy-tab">
+					<form method="post" class="pt-3">
+					
+					    <input type="hidden" name="server" value="anarchy">
+						
+						<div class="form-group">
+							<label class="font-weight-bold small" for="nicknameLabel">Введите никнейм</label>
+							<input type="text" class="form-control" maxlength="16" id="nicknameLabel" name="playername" required="" placeholder="Введите никнейм">
+						</div>
+
+						<div class="form-group">
+							<label class="font-weight-bold small" for="permissionLabel">Выберите привилегию</label>
+							<select name="item" id="permissionLabel" class="form-control">
+						
+						
+								<optgroup label="Донат привилегии">
+								
+								<option value="immortal">Иммортал - 639 руб./Навсегда</option>
+							
+								<option value="master">Мастер - 479 руб./Навсегда</option>
+							
+								<option value="legend">Легенда - 329 руб./Навсегда</option>
+							
+								<option value="punisher">Каратель - 179 руб./Навсегда</option>
+							
+								<option value="wanderer">Странник - 129 руб./Навсегда</option>
+							
+								<option value="titan">Титан - 79 руб./Навсегда</option>
+							
+								<option value="warrior">ВОИН - 35 руб./Навсегда</option>
+							
+								<optgroup label="Ключи к донат кейсам">
+								
+								<option value="case5">Кейсы 5 шт - 42 руб.</option>
+							
+								<option value="case10">Кейсы 10 шт - 69 руб.</option>
+							
+								<option value="case20">Кейсы 20 шт - 119 руб.</option>
+							
+								<option value="case30">Кейсы 30 шт - 139 руб.</option>
+							
+								<optgroup label="Ключи к кейсам с монетками">
+								
+								<option value="moneycase5">Кейсы 5 шт - 25 руб.</option>
+							
+								<option value="moneycase10">Кейсы 10 шт - 42 руб.</option>
+							
+								<option value="moneycase20">Кейсы 20 шт - 79 руб.</option>
+							
+								<option value="moneycase30">Кейсы 30 шт - 129 руб.</option>
+							
+								<optgroup label="Коины">
+								
+								<option value="coins20">20 Коинов - 20 руб.</option>
+							
+								<option value="coins60">50 Коинов - 50 руб. [Бонус +10]</option>
+							
+								<option value="coins130">100 Коинов - 100 руб. [Бонус +30]</option>
+							
+								<option value="coins310">250 Коинов - 250 руб. [Бонус +60]</option>
+							
+								<option value="coins650">500 Коинов - 479 руб. [Бонус +150]</option>
+							
+								<option value="coins2000">1000 Коинов - 979 руб. [Бонус +1000]</option>
+							
+								<option value="coins6000">3000 Коинов - 2800 руб. [Бонус +3000]</option>
+							
+						     </optgroup></optgroup></optgroup></optgroup></select>
+						</div>
+
+						<div class="form-group">
+							<label class="font-weight-bold small" for="promoLabel">Промо-код (Если есть)</label>
+							<input type="text" class="form-control" id="promoLabel" name="promocode" placeholder="Промо-код">
+						</div>
+						
+						<div class="text-center pt-3">
+						    <button type="submit" class="btn btn-success text-uppercase">Купить / Доплатить</button>
+						</div>
+						
+					</form>
+				</div>
+						
+			</div>
+		</div>
+
+        <script>
+		document.write('<div class="last-buy pt-5"><p class="h4 pb-3">Последние покупки</p>');
+        
+		var names = ['Keksik9000', 'SerezhaGrinin', 'Smorchok', 'Perdun2005', 'VladlenMarhel', 'PlotnikovoCity', 'ERBAEV', 'AndryushaErbaev', 'CLAUHGRIF', 'anusKonya', 'ArseniyPenzev', 'CHURKA', 'BiznesVladMerhel', 'KashaSeller', 'ShurikFACE', 'Svin_VLADIK', 'GlebMakaryk', 'KYKLGLEB', 'ILoveHleb', 'MuradRahmadaun', 'ShurikMC'];
+
+		var today = new Date();
+		var date = today.getDate() + '.' + today.getMonth() + '.20';
+		var time = (today.getHours()+3) + ':' + today.getMinutes();
+		
+		for (var i = 0; i < 4; i++) {
+			var name = names[Math.floor(Math.random() * names.length)];
+		     document.write(`
+			 <div class="last-buy-id">
+			     <div class="last-buy-wrapper">
+				    <div class="top-wrapper">
+				       <div class="block-left"><div class="icon head-icon"></div></div>
+				       <div class="block-right">
+				           <div class="login text-overflow">${name}</div>
+				       </div>
+				    </div>
+				    <ul class="subinfo m-0">
+				       <li class="text-overflow">
+				          <span class="icon">
+				             <i class="fas fa-shopping-cart"></i>
+				          </span><span class="text">[Владелец]</span>
+				       </li>
+				       <li class="text-overflow">
+				           <span class="icon">
+				              <i class="fas fa-clock"></i>
+				           </span><span class="text">${date} в ${time} (МСК)</span>
+				       </li>
+				    </ul>
+				 </div>
+			</div>`);
+        }
+		document.write("</div>");
+		</script>
+
+	</div>
+
+	<div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="rulesModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="rulesModalTitle">Правила</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row pb-5">
+						<div class="col-3">
+							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="v-pills-main-tab" data-toggle="pill" href="#v-pills-main" role="tab" aria-controls="v-pills-main" aria-selected="true">Общие правила</a>
+								<a class="nav-link" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab" aria-controls="v-pills-account" aria-selected="false">Права и обязанности игроков</a>
+								<a class="nav-link" id="v-pills-rules1-tab" data-toggle="pill" href="#v-pills-rules1" role="tab" aria-controls="v-pills-rules1" aria-selected="false">Права и обязанности администрации</a>
+								<a class="nav-link" id="v-pills-rules2-tab" data-toggle="pill" href="#v-pills-rules2" role="tab" aria-controls="v-pills-rules2" aria-selected="false">Запреты и наказания:</a>
+							</div>
+						</div>
+
+						<div class="col-9">
+							<div class="tab-content" id="v-pills-tabContent">
+								<div class="tab-pane fade show active" id="v-pills-main" role="tabpanel" aria-labelledby="v-pills-main-tab">
+									<p>1.1 Незнание правил не освобождает вас от ответственности;</p>
+
+									<p><span class="badge badge-danger">ВАЖНО</span> 1.2 Регистрируясь на сервере, вы соглашаетесь со всеми правилами предоставленными в этом списке, правами описанными ниже и обязанностями;</p>
+
+									<p>1.3 При вводе на сайте не верного ника администрация не отвечает за последствия покупки доната на этот ник</p>
+
+									<p>1.4 Передача/продажа аккаунтов сторонним лицам строго запрещена;</p>
+
+									<p>1.5 Администрация оставляет за собой право в одностороннем порядке изменять текущие правила без уведомления пользователей посредством группы VK;</p>
+
+									<p>1.6 Администрация ведет управление игровыми процессами и всем проектом - исключительно по своему усмотрению;</p>
+
+									<p>1.7 Так как не всегда удается определить нарушение правил пользователем, окончательное решение остается за Администраторами проекта;</p>
+								</div>
+								<div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+									<p>2.1 Игрок полностью отвечает за надежность своего пароля и доступа к аккаунту;</p>
+
+									<p> 2.2 Игрок соглашается с тем, что потраченные им средства не будут возвращены;</p>
+
+									<p> 2.3 Игроки, имеющие различные привилегии на сервере, ничем не отличаются от обычных игроков, кроме привилегий и полностью подчиняются правилам проекта;</p>
+
+									<p> 2.4 В случае отсутствия игрока более 3х календарных месяца, все его данные, включая постройки на сервере, личный аккаунт и др. могут быть удалены, без оповещения его об этом; (Если у вас есть донат у вас ничего не пропадет)</p>
+								</div>
+
+								<div class="tab-pane fade" id="v-pills-rules1" role="tabpanel" aria-labelledby="v-pills-rules1-tab">
+									<p>3.1 Главная администрация проекта является самым высоким по званию лицом, которое может не соблюдать данные правила и действовать на свое усмотрение;</p>
+
+									<p>3.2 Администрация не несет ответственности за аккаунты игроков, включая социальную инженерию, вирусы, подбор пароля и т.п.;</p>
+
+									<p>3.3 Все полученные администрацией средства, являются добровольным пожертвованием и не подлежат возврату;<br>
+
+									<p>3.4 Администрация вправе выдавать любое наказание;</p>
+
+									<p>3.5 Толкование правил сайта осуществляется только главными Администраторами. Любые другие попытки истолковать правила в пользу любой из сторон признаются некорректными;</p>
+
+									<p>3.6 Жалобы на администрацию не принимаются;</p>
+
+									<p>3.7 Администрация вправе забирать привилегии \ отказывать в обслуживании игрокам без объяснения причины;</p>
+
+									<p>3.8 Администрация имеет право не объяснять причины блокировки аккаунтов.</p>
+
+									<p>3.9 Администратор вправе изъять у пользователя любое имущество, если пользователь не сможет доказать его честное (без использования запрещенных дополнительных программных средств – читов и т.д.) происхождение;</p>
+								</div>
+
+								<div class="tab-pane fade" id="v-pills-rules2" role="tabpanel" aria-labelledby="v-pills-rules2-tab">
+									<p>4.2 Гриферство (выше премиума) <u>[Наказание: Бан до 5 часов]</u></p>
+									<p>4.3 Подстрекать других игроков на нарушение правил <u>[Наказание: Мут на 1 час]</u></p>
+									<p>4.4 Неприличные постройки или постройки, которые портят архитектуру игровой карты, такие как: столбы/лестницы в небо, коробки, оскорбительные постройки, застройка чужих построек и т.д. <u>[Наказание: Снос постройки + бан на 2 дня]</u></p>
+									<p>4.5 Зазыв на ловушки <u>[Наказание: Бан на 30 мин. + удаление ловушки]</u></p>
+									<p>4.6 Флуд, мат, оскорбление, транслит,угрозы, капс, попрошайничество в чате <u>[Наказание: Мут на 10 мин.]</u></p>
+									<p>4.7 Продажа аккаунтов <u>[Наказание: Перманентный / Бан IP+ Снятие доната]</u></p>
+									<p>4.8 Препятствие нормальной игре(Кик с игры/помеха в рг) <u>[Наказание: Бан на 1 час]</u></p>
+									<p>4.9 Необоснованное / некорректное наказание игроков <u>[Наказание: Бан на 8 часов]</u></p>
+									<p>4.10 Оскорбление проекта и его администрации <u>[Наказание: Бан на 2 дня.]</u></p>
+									<p>4.15 Использование возможностей доната в корыстных целях(в пвп и т.п.). <u>[Наказание: Бан до 5 дней]</u></p>
+									<p>4.16 Реклама других проектов в любом виде <u>[Наказание: Перманентный бан / Бан по IP]</u></p>
+									<p>4.17 Продажа сторонних ресурсов (Аккаунтов других игр, лицензий и т.д) <u>[Наказание: Пермаментный / Бан IP]</u></p>
+									<p>4.18 Сделки, связанные с продажей игровых ценностей за реальные деньги. <u>[Наказание: Пермаментный бан / Бан по IP]</u></p>
+									<p>4.19 Использование читов <u>[Наказание: Пермаментый бан/ Бан по IP]</u></p>
+									<p>4.20 Разбан/размут нарушителя. <u>[Наказание: Бан на 8 часов]</u></p>
+									<p>4.21 Некорректный мут/кик. <u>[Наказание: Бан на 30 мин]</u></p>
+									<p>4.22 Порча/изменение/снос спавна, в т.ч.его поджигание. <u>[Наказание: Пермаментный бан / Снятие доната]</u></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="contactsModal" tabindex="-1" role="dialog" aria-labelledby="contactsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="contactsModalLabel">Контакты</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row text-center">
+						<div class="col-4">
+							<a href="mailto:info@imidge.one" target="_blank"><img src="assets\img\mail-icon.png" alt="E-Mail"></a>
+						</div>
+
+						<div class="col-4">
+							<a href="https://vk.me/dex_land" target="_blank"><img src="assets\img\vk-icon.png" alt="VK"></a>
+						</div>
+
+						<!--<div class="col-4">
+							<a href="#" target="_blank"><img src="assets/img/discord-icon.png" alt="Discord" /></a>
+						</div>-->
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="securityModal" tabindex="-1" role="dialog" aria-labelledby="securityModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="securityModalTitle">Безопасность</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<p><span class="badge badge-danger">ВАЖНО</span> Никому не сообщайте свой пароль.</p>
+					<p>- Пароль должны знать только Вы и никто более (ни братья, ни сёстры, ни домашние животные). Если произошла утечка (кто-то узнал его) пароля - немедленно смените его. Не сообщайте пароль даже администрации - так делают только мошенники. Настоящей администрации Ваш пароль вовсе не нужен (администрация и так имеет контроль над всеми аккаунтами).</p>
+					<p>- Вы должны выйти со своего аккаунта, если играете на общедоступном или чужом компьютере, а так же, если у Вас есть братья/сёстры, имеющие доступ к вашему компьютеру. Чтобы это сделать, просто напишите команду /logout на сервере.</p>
+					<p>- Не переводите денежные средства злоумышленникам, представляющимися администрацией сервера. Оплата всех услуг сервера производится только через сайт, (или через администратора)</p>
+					<p>- Не используйте простые пароли вида: qwerty или password. Постарайтесь использовать в пароле различные символы - это усложнит подбор пароля для злоумышленника. Сгенерировать сложный пароль можно тут (клик)</p>
+					<p>- Не запускайте вредоносные программы, даже которые дали вам друзья! Такое ПО может украсть у Вас пароль, а в крайнем случае заразить Ваш компьютер!</p>
+					<p>- <span class="badge badge-danger">ВАЖНО</span> Ни в коем случае не вводите свои данные от аккаунта на сторонних сайтах или серверах! Это называется фишингом (ловля на удочку). Мошенники за это обычно предлагают подарки, но на самом деле Вы ничего не получите, а вот мошенник получит доступ к вашему аккаунту. Если такое произошло - немедленно смените пароль от аккаунта.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="permdescModal" tabindex="-1" role="dialog" aria-labelledby="permdescModalTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="permdescModalTitle">Описание доната</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<div class="row">
+						<div class="col-3">
+							<div class="nav flex-column nav-pills" id="v-pills-tab4" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Вип</a>
+								<a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Премиум</a>
+								<a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Креатив</a>
+								<a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Легенда</a>
+								<a class="nav-link" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">Модер</a>
+								<a class="nav-link" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false">Админ</a>
+								<a class="nav-link" id="v-pills-7-tab" data-toggle="pill" href="#v-pills-7" role="tab" aria-controls="v-pills-7" aria-selected="false">Гл.Админ</a>
+								<a class="nav-link" id="v-pills-8-tab" data-toggle="pill" href="#v-pills-8" role="tab" aria-controls="v-pills-8" aria-selected="false">Энигма</a>
+								<a class="nav-link" id="v-pills-9-tab" data-toggle="pill" href="#v-pills-9" role="tab" aria-controls="v-pills-9" aria-selected="false">Император</a>
+								<a class="nav-link" id="v-pills-10-tab" data-toggle="pill" href="#v-pills-10" role="tab" aria-controls="v-pills-10" aria-selected="false">Делюкс</a>
+								<a class="nav-link" id="v-pills-11-tab" data-toggle="pill" href="#v-pills-11" role="tab" aria-controls="v-pills-11" aria-selected="false">Помощь</a>
+								<a class="nav-link" id="v-pills-12-tab" data-toggle="pill" href="#v-pills-12" role="tab" aria-controls="v-pills-12" aria-selected="false">Опка</a>
+								<a class="nav-link" id="v-pills-13-tab" data-toggle="pill" href="#v-pills-13" role="tab" aria-controls="v-pills-13" aria-selected="false">Хелпер</a>
+								<a class="nav-link" id="v-pills-14-tab" data-toggle="pill" href="#v-pills-14" role="tab" aria-controls="v-pills-14" aria-selected="false">Владелец</a>
+								<a class="nav-link" id="v-pills-14-tab" data-toggle="pill" href="#v-pills-15" role="tab" aria-controls="v-pills-15" aria-selected="false">АнтиГрифер</a>
+								<a class="nav-link" id="v-pills-14-tab" data-toggle="pill" href="#v-pills-16" role="tab" aria-controls="v-pills-16" aria-selected="false">Цезарь</a>
+							</div>
+						</div>
+						<div class="col-9">
+							<div class="tab-content" id="v-pills-tabContent4">
+								<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                                Вип:
+                                
+                                  <li>Возможность получить набор /kit vip </li>
+                                  <li>Возможность отключения тел-ции /tptoggle </li>
+                                  <li>Возможность проверить пинг /ping </li>
+                                  <li>Возможность очистить инвентарь /ci </li>
+                                  <li>Возможность эндер сундук /echest </li>
+                                  <li>Возможность одеть блок на голову /hat </li>
+                                  <li>Возможность вернуться назад /back </li>
+                                  <li>Возможность игнорировать игрока /ignore </li>
+                                  <li>Возможность заходить на полный сервер </li>
+                                
+								</div>
+
+								<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+								Премиум:
+								
+                                <li>Возможность получить набор /kit prem </li>
+                                <li>Возможность включить полёт /fly </li>
+                                <li>Возможность починить вещи /fix all </li>
+                                <li>Возможность включить бессмертие /god </li>
+                                <li>Возможность открыть верстак /wbench </li>
+                                <li>Возможность посмотреть крафт /recipe </li>
+                                <li>Возможность восстановить голод /feed </li>
+                                <li>Возможность встать в афк режим /afk </li>
+                                <li>Возможность установить 4 дома /sethome  </li>
+                                
+								</div>
+
+								<div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+								Креатив:
+								
+                                <li>Возможность выдать джетпак /feather </li>
+                                <li>Возможность стрельнуть /kittycannon </li>
+                                <li>Возможность узнать айди /durability </li>
+                                <li>Возможность включить креатив /gm 1 </li>
+                                <li>Возможность включить приключ. /gm 2 </li>
+                                <li>Возможность выключить креатив /gm 0 </li>
+                                <li>Возможность много точек дома /sethome </li> 
+                                <li>Возможность посмотреть игроков /near </li>
+                                <li>Возможность персональное время /ptime </li>
+                                <li>Возможность выдать опыт exp </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+								Легенда:
+								
+                                <li>Возможность использовать админ чат /ac </li>
+                                <li>Возможность включить невидимку /vanish </li>
+                                <li>Возможность телепорт к другим /tp </li>
+                                <li>Возможность телепорт к себе /tphere </li>
+                                <li>Возможность дюпнуть предмет /more </li>
+                                <li>Возможность инфо о сервере /gc </li>
+                                <li>Возможность сменить погоду /weather </li>
+                                <li>Возможность изменить время мира /time </li>
+                                <li>Возможность телепортировать блок /jump </li>
+                                <li>Возможность игнорировать игрока /ignore </li>
+                                <li>Возможность несколько точек дома /sethome </li>  
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+								Модер:
+								
+                                <li>Возможность телепорт наверх /etop </li>
+                                <li>Возможность телепорт координат /tppos </li>
+                                <li>Возможность выдать опыт игроку /exp </li>
+                                <li>Возможность вылечить игрока /heal </li>
+                                <li>Возможность проверить баланс /balance </li>
+                                <li>Возможность показать топ богачей /baltop </li>
+                                <li>Возможность создатель варп /setwarp </li>
+                                <li>Возможность запустить огненный шар /fireball  </li>  
+                                <li>Возможность несколько точек дома /sethome </li>
+                                <li>Возможность видеть игроков в ванише </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
+								Админ:
+								
+                                <li>Возможность поджечь игрока /burn </li>
+                                <li>Возможность узнать координаты /getpos </li>
+                                <li>Возможность поставить солнце /sun </li>
+                                <li>Возможность поставить дождь /rain </li>
+                                <li>Возможность включить день /day </li>
+                                <li>Возможность включить ночь /night </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab">
+								Гл.Админ:
+								
+                                <li>Возможность редактировать книгу /book </li>
+                                <li>Возможность добавить эффект /potion </li>
+                                <li>Возможность смена погоды /pweather </li>
+                                <li>Возможность узнать координаты /getpos </li> 
+                                <li>Возможность изменить погоду /weather </li>
+                                <li>Возможность ударить молнией /shock </li>
+                                <li>Возможность сделать мини-объяление /me </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab">
+								Энигма:
+								
+                                <li>Возможность выдать предупреждение /warn </li>
+                                <li>Возможность убрать предупреждение /unwarn </li>
+                                <li>Возможность отправить запрос тп /tpahere </li>
+                                <li>Возможность последних заходов /seen </li>
+                                <li>Возможность узнать реальное имя /realname </li>
+                                <li>Возможность разбанить игрока /unban </li>
+                                <li>Возможность поджечь игрока /burn </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-9" role="tabpanel" aria-labelledby="v-pills-9-tab">
+								Император:
+								
+                                <li>Новинка! Когда вы заходите, об этом пишет в чат </li>
+                                <li>Доступ к чужим приватам и сундукам </li>
+                                <li>Возможность использовать сет //set </li>
+                                <li>Возможность забанить игрока /ban </li>
+                                <li>Возможность телепорт к себе /tphere </li>
+                                <li>Возможность бесконечных блоков /unlimited </li>
+                                <li>Возможность дать мут игроку /mute </li>
+                                <li>Возможность кикнуть игрока /kick </li>
+                                <li>Возможность снять мут /unmute </li>
+                                <li>Возможность снять бан /unban </li>
+                                <li>Возможность дать fly игроку /fly </li>
+                                <li>Возможность зачаровать /enchant </li>
+                                <li>Возможность поджечь игрока /burn </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-10" role="tabpanel" aria-labelledby="v-pills-10-tab">
+								Делюкс:
+								
+                                <li>Доступ к приватам (увеличен х2) </li>
+                                <li>Возможность сетать //set (увеличен х2) </li>
+                                <li>Вечный иммунитет от бана/кика/мута и т.д. </li>
+                                <li>Возможность превратить в блоки /compact </li>
+                                <li>Возможность писать объявление /bc </li>
+                                <li>Возможность забанить игрока /ban </li>
+                                <li>Возможность дать мут игроку /mute </li>
+                                <li>Возможность кикнуть игрока /kick </li>
+                                <li>Возможность снять мут /unmute </li>
+                                <li>Возможность снять бан /unban </li>
+                                <li>Возможность изменить ник /nick </li>
+                                <li>Возможность сделать динамит /tnt </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-11" role="tabpanel" aria-labelledby="v-pills-11-tab">
+								Помощник:
+								
+                                <li>Новинка! Суффиксы в табе /sticktab </li>
+                                <li>Новинка! Суффиксы в чате /stickchat </li>
+                                <li>Доступ к приватам (увеличен х3) </li>
+                                <li>Доступ к приватам (увеличен х3) </li>
+                                <li>Полный доступ к флагам /rg flag </li>
+                                <li>Возможность дать денег /eco give </li>
+                                <li>Возможность сетать //set (увеличен х3) </li>
+                                <li>Возможность телепорт к себе /tphere </li>
+                                <li>Возможность включить нано-броню /guard </li>
+                                <li>Возможность выдать себе предмет /i </li>
+                                <li>Возможность выдать игроку предмет /give </li>
+                                <li>Возможность узнать азимут /compass </li>
+                                <li>Возможность узнать высоту моря /depth </li>
+                                <li>Возможность узнать инфо региона /rg info </li> 
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-12" role="tabpanel" aria-labelledby="v-pills-12-tab">
+								Опка:
+								
+                                <li>Новинка! Слова в чате /chatword </li>
+                                <li>Новинка! Слова в табе /tabword </li>
+                                <li>Доступ к приватам (увеличен х5) </li>
+                                <li>У вас иммунитет от бана (невозможно забанить) </li>
+                                <li>Возможность сетать //set (увеличен х5) </li>
+                                <li>Возможность телепорт игрока на спавн /spawn </li>
+                                <li>Возможность следить за сообщениями /socialspy </li>
+                                <li>Возможность телепорт к игроку с tptoggle /tpo </li>
+                                <li>Возможность дать fly другу /fly </li>
+                                <li>Возможность включить радужную броню /rainbow </li>
+                                <li>Возможность включить диско броню /da </li>
+                                <li>Доступ к цветному чату & + цифра цвета </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-13" role="tabpanel" aria-labelledby="v-pills-13-tab">
+								Хелпер:
+								
+                                <li>Выдаются почти все команды сервера </li>
+                                <li>Возможность мини-консоли /console </li>
+                                <li>Возможность дать фейк-оп /fakeop </li>
+                                <li>Возможность сделать стены //walls </li>
+                                <li>Возможность сетать //set (увеличен х10) </li>   
+                                <li>Возможность убрать воду //drain </li>
+                                <li>Возможность забанить по IP /ipban </li>
+                                <li>Возможность скопировать постройку //copy </li>
+                                <li>Возможность вставить постройку //paste </li>
+                                <li>Возможность забанить навсегда /ban </li>
+                                <li>Возможность замутить навсегда /mute </li>
+                                <li>Возможность делать пирамиду //pyramid </li>
+                                <li>Возможность делать любой ник /nick </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-14" role="tabpanel" aria-labelledby="v-pills-14-tab">
+								Владелец:
+								
+                                <li>Вам доступны все команды сервера </li>
+                                <li>С Вас сняты все задержки на команды </li>
+                                <li>Вы получаете звездочку в pex </li>
+                                <li>Вы получаете полную опку (без лимита) </li>
+                                <li>Полный доступ к приватам (без лимита) </li>
+                                <li>Включить свечение /glow </li>
+                                
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-15" role="tabpanel" aria-labelledby="v-pills-15-tab">
+								АнтиГрифер:
+								
+                                <li>Полный доступ WorldEdit &7(топорик)</li>
+                                <li>Доступ к приватам (3 в день)</li>
+                                <li>Возможность выдать бан /ban (на 24 часа)</li>
+                                <li>Возможность выдать мут /mute (на 24 часа)</li>
+                                <li>Возможность ставить любой ник /nick</li>
+                                <li>Возможность выдавать донат /grant</li>
+                                <li>Возможность посадить в тюрьму /jail</li>
+                                <li>Возможность изменить скорость /speed</li>
+                                <li>Возможность заспавнить моба /spawnmob</li>
+                                <li>Возможность сменить цвет префикса /color</li>
+                                <li>Приоритетная поддержка, если вы забудете</li>
+                                <li>пароль - мы восстановим вам аккаунт (по чеку)</li>
+								</div>
+								
+								<div class="tab-pane fade" id="v-pills-16" role="tabpanel" aria-labelledby="v-pills-16-tab">
+								       Цезарь:
+								       
+                                       <li>Вам РЕАЛЬНО выдаются все команды сервера </li>
+                                       <li>Вы сможете писать заблокированные слова в чат </li>
+                                       <li>Полный доступ к топорику (WorldEdit) </li>
+                                       <li>Можно сменить префикс в чате /chat prefix </li>
+                                       <li>Можно сменить префикс в табе /tab prefix </li>
+                                       <li>У вас будет связь с создателем (добавит в друзья) </li>
+                                       <li>Вы получаете полную опку (без лимита) </li>
+                                       <li>Безлимитный доступ ко всем регионам </li>
+                                       <li>Вы получаете звездочку в pex </li>
+                                       <li>Можно сходить с создателем в Discord </li>
+                                       <li>Вы будете в команде Администрации сервера. </li>
+                                       <li>Вы сможете выдать донат другу /grant </li>
+                                       <li>Вам доступны все команды сервера (Даже опасные) </li>
+                                       
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="mt-5 bg-secondary text-white">
+		<div class="container">
+			<div class="wrapper py-3">
+				<div class="row">
+					<div class="col-6">
+						<small>2017-2020 © DexLand</small>
+					</div>
+					<div class="col-6">
+						<small>Почта для связи: info@imidge.one</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</body>
+	
+	<script type="text/javascript"> 	
+	
+	var date = new Date();
+    var day = date.getDate() + 1;
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    if(day >= 32) { 
+       day = day - 1;
+    }
+    $(".mb-0").countdown(year + "/" + month + "/" + day, function(event) {
+    	var message = event.strftime('%H') + ' час. ' + event.strftime('%M') + ' мин. ' + event.strftime('%S') + ' сек.';
+    	$('.timer').text(message);
+    });
+	
+    $.ajax({
+        url: "https://api.mcsrvstat.us/2/mc.dexland.ru",
+        dataType: "json",
+        type: "GET",
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: {},
+    
+        error: function (data, textStatus, xhr) {
+	  	  /*
+	  	   var min = 2000;
+	  	   var max = 4000;
+             $('#online').text('Текущий онлайн сервера: ' + Math.floor(min + Math.random() * (max + 1 - min)));
+	  	  */
+        },
+    
+        success: function (data) {
+          $('#online-players').text(data.players.online);
+        },
+    });
+	
+	</script>
+    <script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(50330023, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50330023" style="position:absolute; left:-9999px;" alt="\&quot;"></div></noscript>
+	
+</html>

@@ -1,0 +1,68 @@
+Uri: https://dexland.ru/
+File Name: c:\Downloaded Web Sites\dexland.ru\index.htm
+Content Type: text/html
+
+Uri: https://dexland.ru/assets/img/bgdot.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\bgdot.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/css/style.css
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\css\style.css
+Content Type: text/css
+
+Uri: https://dexland.ru/assets/css/style-responsive.css
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\css\style-responsive.css
+Content Type: text/css
+
+Uri: https://dexland.ru/how
+File Name: c:\Downloaded Web Sites\dexland.ru\how.html
+Content Type: text/html
+
+Uri: https://dexland.ru/console
+File Name: c:\Downloaded Web Sites\dexland.ru\console.html
+Content Type: text/html
+
+Uri: https://dexland.ru/assets/js/main.js
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://dexland.ru/assets/img/mail-icon.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\mail-icon.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/vk-icon.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\vk-icon.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/steve.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\steve.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/how/1.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\how\1.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/how/2.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\how\2.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/how/3.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\how\3.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/how/4.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\how\4.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/how/5.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\how\5.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/how/6.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\how\6.png
+Content Type: image/png
+
+Uri: https://dexland.ru/assets/img/how/7.png
+File Name: c:\Downloaded Web Sites\dexland.ru\assets\img\how\7.png
+Content Type: image/png
+
